@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dao" class="org.example.dao.DaoImpl"></bean> <!-- Créer un objet de la classe DaoImpl est donne comme Nom dao-->
+    <bean id="service" class="org.example.service.ServiceImpl">
+        <property name="dao" ref="dao"></property> <!-- Injecter l'objet dao dans l'objet service c-à-d injection de dependance -->
+    </bean>
+</beans>

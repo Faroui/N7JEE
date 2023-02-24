@@ -1,0 +1,2 @@
+ma.n7.dao.DaoImpl2
+ma.n7.extension.ServiceImpl2
